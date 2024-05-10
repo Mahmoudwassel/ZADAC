@@ -1,0 +1,356 @@
+/* global style*/
+:root{
+    --mainColor:#294B29;
+    scroll-padding-top: 60px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    font-family: 'Nunito Sans', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+}
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: all .2s linear;
+}
+.btn-white {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: transparent;
+    --bs-btn-border-color: #fff;
+    --bs-btn-hover-color: #111;
+    --bs-btn-hover-bg: #fff;
+    --bs-btn-hover-border-color: #fff;
+   
+}
+.btn-pink{
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--mainColor);
+    --bs-btn-border-color: var(var(--mainColor));
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #50623A;
+    --bs-btn-hover-border-color: #50623A;
+}
+.text-pink{
+    color:var(--mainColor)
+}
+.w-fitContent{
+    width: fit-content;
+}
+/* fixed icons */
+.setting{
+    position: fixed;
+    top: 30%;
+    left: 0;
+    z-index: 99;
+    background-color: #2b2424;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 0 5px 5px 0;
+    -webkit-border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+    -ms-border-radius: 0 5px 5px 0;
+    -o-border-radius: 0 5px 5px 0;
+}
+.up-home{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: var(--mainColor);
+    width: 30px;
+    height: 30px;
+    
+}
+/* navbar */
+nav  .nav-link{
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+}
+nav .logo
+{
+    font-family: 'Philosopher', sans-serif;
+    
+    color: var(--mainColor);
+}
+nav .nav-link
+{
+    font-size: 22px;
+}
+nav li:hover .nav-link{
+    color: var(--mainColor) !important;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--mainColor);
+    font-weight: 700;
+}nav .dot 
+{
+    color: var(--mainColor);
+}
+.fa-cart-shopping span
+{
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -10px;
+    right: -6px;
+    cursor: pointer;
+
+    
+}
+
+/* nav end========================= */
+
+/* home */
+header {
+    background-image:url(../images/background.png);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+header .heedercontent
+{
+    color: #fff;
+    
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: large;
+}
+header .heedercontent span
+{
+    color: #294B29;
+}
+header .main-title{
+    font-size: 60px;
+    font-weight: 500;
+}
+header .p-header,.p-title{
+    color: rgba(255,255,255,0.7);
+    max-width: 500px;
+    margin: auto;
+}
+header .scroll{
+    width: 30px;
+    height: 50px;
+    border: 1px solid #fff;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    animation: bounc 1s infinite linear;
+    -webkit-animation: bounc 1s infinite ;
+}
+header .scroll::after{
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 5px;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+
+}
+@keyframes bounc {
+    0%{bottom: 10px;}
+    30%{bottom: 30px;}
+    50%{bottom: 10px;}
+    60%{bottom: 15px;}
+    100%{bottom: 10px;}
+}
+/* Collection */
+.Collection .nav-link{
+color: #111
+}
+.Collection .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: var(--mainColor);
+    border-radius: 30px;
+    padding-inline: 20px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.Collection .inner{
+    cursor: pointer;
+}
+.Collection .content{
+    top: 150%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    z-index: 99;
+}
+.Collection .inner:hover .content{
+ top: 50%;
+}
+.Collection .layer{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0,0.7);
+    opacity: 0;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+}
+
+.Collection .inner:hover .layer{
+    opacity: 1;
+}
+
+.nav-pills .nav-link 
+{
+    color: #000;
+}
+.nav-pills .nav-link.active
+{
+    background-color: var(--mainColor);
+}
+.dropdown-menu
+{
+    --bs-dropdown-link-active-bg : var(--mainColor);
+}
+
+.drop.active
+{
+    background-color: #000 !important;
+}
+.Collection img
+{
+    height: 250px;
+}
+.Collection .footer 
+{
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: -150%;
+    
+}
+/* ================ */
+.Category .Catimg
+{
+    position: relative;
+}
+.Category .collectionlayer
+{
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+    border: #fff solid 2px;
+    padding: 10px;
+}
+
+
+
+
+/* footer================= */
+footer{
+    background-color: var(--mainColor);
+}
+footer i 
+{
+    color: #fff;
+}
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px ;
+}
+footer h1
+{
+    font-family: 'Philosopher', sans-serif;
+    text-shadow:  2px 2px 4px #000;
+}
+footer h2
+{
+    color: var(--light);
+}
+  footer p
+  {
+      color: var(--body-color);
+      
+  }
+  footer .fa-facebook:hover
+  {
+    color: #005ce6;
+    transition: all 0.5s;
+  }
+  footer .fa-twitter:hover
+  {
+    color: #21dada;
+    transition: all 0.5s;
+  }
+  footer .fa-instagram:hover
+  {
+    color: #dd2a7b ;
+    transition: all 0.5s;
+  }
+  footer .fa-snapchat:hover
+  {
+    color: #ffff21;
+    transition: all 0.5s;
+  }
+
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color:white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+    footer
+    {
+        height: 32vh;
+    }
+}
+/* footer end */

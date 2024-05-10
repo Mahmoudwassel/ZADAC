@@ -1,0 +1,234 @@
+body{
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: #DBE7C9;
+}
+
+*{
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+:root{
+  --mainColor:#294B29;
+  scroll-padding-top: 60px;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+/* navbar */
+nav  .nav-link{
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+nav .logo
+{
+  font-family: 'Philosopher', sans-serif;
+  
+  color: var(--mainColor);
+}
+nav .nav-link
+{
+  font-size: 22px;
+}
+nav li:hover .nav-link{
+  color: var(--mainColor) !important;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  color: var(--mainColor);
+  font-weight: 700;
+}nav .dot 
+{
+  color: var(--mainColor);
+}
+.fa-cart-shopping span
+{
+  width: 15px;
+  height: 15px;
+  font-size: 10px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -10px;
+  right: -6px;
+  cursor: pointer;
+
+  
+}
+
+/* nav end========================= */
+
+
+.payment{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding:25px; */
+  
+  min-height: 75vh;
+  
+}
+
+.payment form{
+  padding:20px;
+  width:700px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+.payment form .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+
+.payment form .row .col{
+  flex:1 1 250px;
+}
+
+.payment form .row .col .title{
+  font-size: 20px;
+  color:#333;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.payment form .row .col .inputBox{
+  margin:15px 0;
+  
+}
+
+.payment form .row .col .inputBox span{
+  
+  display: block;
+}
+
+.payment form .row .col .inputBox input{
+  width: 100%;
+  border:1px solid #ccc;
+  padding:10px 15px;
+  font-size: 15px;
+  text-transform: none;
+  border-radius: 5px;
+
+}
+
+.payment form .row .col .inputBox input:focus{
+  border:1px solid #000;
+}
+
+.payment form .row .col .flex{
+  display: flex;
+  gap:15px;
+}
+
+.payment form .row .col .flex .inputBox{
+  margin-top: 5px;
+}
+
+.payment form .row .col .inputBox img{
+  height: 34px;
+  
+}
+
+.payment form .submit-btn{
+  width: 100%;
+  padding:12px;
+  font-size: 17px;
+  background: #27ae60;
+  color:#fff;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.payment form .submit-btn:hover{
+  background: #2ecc71;
+}
+
+
+
+/* footer================= */
+footer{
+  background-color: var(--mainColor);
+}
+.footerContainer{
+  width: 100%;
+  padding: 70px 30px 20px ;
+}
+footer h1
+{
+  font-family: 'Philosopher', sans-serif;
+  text-shadow:  2px 2px 4px #000;
+}
+footer h2
+{
+  color: var(--light);
+}
+footer p
+{
+    color: var(--body-color);
+    
+}
+footer .fa-facebook:hover
+{
+  color: #005ce6;
+  transition: all 0.5s;
+}
+footer .fa-twitter:hover
+{
+  color: #21dada;
+  transition: all 0.5s;
+}
+footer .fa-instagram:hover
+{
+  color: #dd2a7b ;
+  transition: all 0.5s;
+}
+footer .fa-snapchat:hover
+{
+  color: #ffff21;
+  transition: all 0.5s;
+}
+
+.footerNav ul{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+.footerNav ul li a{
+  color:white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+
+}
+
+@media (max-width: 700px){
+  .footerNav ul{
+      flex-direction: column;
+  } 
+  .footerNav ul li{
+      width:100%;
+      text-align: center;
+      margin: 10px;
+  }
+  .socialIcons a{
+      padding: 8px;
+      margin: 4px;
+  }
+  footer
+  {
+      height: 32vh;
+  }
+}
+/* footer end */

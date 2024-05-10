@@ -1,0 +1,192 @@
+:root{
+    --mainColor:#294B29;
+    scroll-padding-top: 60px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #BBC3A4;
+    
+}
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: all .2s linear;
+}
+
+/* navbar */
+nav  .nav-link{
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+}
+nav .logo
+{
+    font-family: 'Philosopher', sans-serif;
+    
+    color: var(--mainColor);
+}
+nav .nav-link
+{
+    font-size: 22px;
+}
+nav li:hover .nav-link{
+    color: var(--mainColor) !important;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--mainColor);
+    font-weight: 700;
+}nav .dot 
+{
+    color: var(--mainColor);
+}
+.fa-cart-shopping span
+{
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -10px;
+    right: -6px;
+    cursor: pointer;
+
+    
+}
+
+/* nav end========================= */
+
+header
+{
+    height: 75%;
+    margin-top: 5%;
+    
+}
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#image-preview {
+    max-width: 100%;
+    max-height: 200px;
+    margin-bottom: 16px;
+}
+
+
+/* footer================= */
+  footer{
+    background-color: var(--mainColor);
+}
+footer i 
+{
+    color: #fff;
+}
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px ;
+}
+footer h1
+{
+    font-family: 'Philosopher', sans-serif;
+    text-shadow:  2px 2px 4px #000;
+}
+footer h2
+{
+    color: var(--light);
+}
+  footer p
+  {
+      color: var(--body-color);
+      
+  }
+  footer .fa-facebook:hover
+  {
+    color: #005ce6;
+    transition: all 0.5s;
+  }
+  footer .fa-twitter:hover
+  {
+    color: #21dada;
+    transition: all 0.5s;
+  }
+  footer .fa-instagram:hover
+  {
+    color: #dd2a7b ;
+    transition: all 0.5s;
+  }
+  footer .fa-snapchat:hover
+  {
+    color: #ffff21;
+    transition: all 0.5s;
+  }
+
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color:white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+    footer
+    {
+        height: 32vh;
+    }
+}
+/* footer end */
